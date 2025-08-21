@@ -3,7 +3,6 @@ import React from "react";
 export default function OurStory() {
   return (
     <section className="max-w-7xl mx-auto px-6 py-12 sm:py-16 flex flex-col md:flex-row items-center gap-8 md:gap-12">
-      {/* Left Side - Image */}
       <div className="md:w-1/2 flex justify-center">
         <img
           src="/images/ourstory.webp"
@@ -12,7 +11,6 @@ export default function OurStory() {
         />
       </div>
 
-      {/* Right Side - Text Details */}
       <div className="md:w-1/2 flex flex-col justify-center">
         <h2 className="text-3xl font-serif sm:text-4xl lg:text-6xl font-bold text-pink-600 mb-6">
           Our Story

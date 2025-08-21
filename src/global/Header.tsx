@@ -2,7 +2,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import LandingOverlay from "@/components/LandingOverlay";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,47 +13,19 @@ export default function Header() {
 
   return (
     <>
-      {/* <LandingOverlay open={menuOpen} onClose={closeMenu} /> */}
       <header className="absolute top-0 left-0 w-full z-20 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16 relative">
           <h1 className="font-bold text-lg font-serif ">LadiesParlour</h1>
 
-          {/* <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50">
-            <button
-              onClick={toggleMenu}
-              className="flex flex-col justify-center items-center w-10 h-10 "
-              aria-label="Toggle landing menu"
-              aria-expanded={menuOpen}
-            >
-              {menuOpen ? (
-                <X className="w-6 h-6 text-pink-600" />
-              ) : (
-                <Menu className="w-6 h-6 text-pink-600" />
-              )}
-              {/* Dropdown indicator - only visible on mobile */}
-          {/* <span className="block md:hidden w-4 h-4 mt-1">
-                <svg
-                  className={`mx-auto ${menuOpen ? "rotate-180" : ""} transition-transform duration-300`}
-                  fill="none"
-                  stroke="pink"
-                  strokeWidth="3"
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 9l6 6 6-6" />
-                </svg>
-              </span>
-            </button>
-          </div> */}
-
           {/* Desktop Nav */}
-          <nav className="hidden md:flex space-x-6 font-serif items-center relative">
-            <Link href="/" className="hover:text-gray-200 font-bold transition">
+          <nav className="hidden md:flex space-x-6 font-serif text-gray-100 items-center relative">
+            <Link href="/" className="hover:text-gray-200 hover:bg-pink-600 hover:p-2 hover:rounded-lg font-bold transition">
               Home
             </Link>
             <div className="relative group">
               <Link
-                href="/about"
-                className="hover:text-gray-200 font-bold transition block"
+                href="#"
+                className="hover:text-gray-200 hover:bg-pink-600 hover:p-2 hover:rounded-lg font-bold transition block"
               >
                 About
               </Link>
@@ -96,14 +67,14 @@ export default function Header() {
 
             <Link
               href="/services"
-              className="hover:text-gray-200 font-bold transition"
+              className="hover:text-gray-200 hover:bg-pink-600 hover:p-2 hover:rounded-lg font-bold transition"
             >
               Services
             </Link>
-            <Link href="/contact" className="hover:text-gray-200 font-bold transition">
+            <Link href="/contact" className="hover:text-gray-200 hover:bg-pink-600 hover:p-2 hover:rounded-lg font-bold transition">
               Contact
             </Link>
-            <Link href="/gallery" className="hover:text-gray-200 font-bold transition">
+            <Link href="/gallery" className="hover:text-gray-200 hover:bg-pink-600 hover:p-2 hover:rounded-lg font-bold transition">
               Gallery
             </Link>
           </nav>
@@ -111,12 +82,12 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden text-black font-bold focus:outline-none z-30"
+            className="md:hidden text-white font-bold focus:outline-none z-30"
             aria-label="Toggle Menu"
             aria-expanded={menuOpen}
           >
             {menuOpen ? (
-              <X className="w-6 h-6 font-bold text-black" />
+              <X className="w-6 h-6 font-bold text-white" />
             ) : (
               <Menu className="w-6 h-6" />
             )}

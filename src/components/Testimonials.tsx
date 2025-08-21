@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef, useEffect } from "react";
 import { testimonials } from "@/data/testimonials";
+import Link from 'next/link';
 
 export default function Testimonials() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -32,21 +33,21 @@ export default function Testimonials() {
   return (
     <section className="w-full bg-pink-200 py-16 sm:py-20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-16">
-        {/* Left: Heading & Button */}
         <div className="md:w-1/2 w-full flex flex-col justify-center">
           <h2 className="text-4xl sm:text-5xl font-serif lg:text-6xl font-semibold text-[#2b2119] leading-snug mb-8 w-full text-center md:text-left">
             Hear What Our Customers Have To Say
           </h2>
           <div className="flex justify-center md:justify-start">
+            <Link href="appointment" passHref>
             <button className="px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition text-xs sm:text-sm md:text-base">
               <span>
                 Get Started
               </span>
             </button>
+            </Link>
           </div>
         </div>
 
-        {/* Right: scroll slider*/}
         <div className="md:w-1/2 w-full flex items-center">
           <div
             ref={scrollRef}

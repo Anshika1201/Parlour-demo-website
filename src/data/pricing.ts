@@ -12,32 +12,32 @@ export interface PricingItem {
 export const pricingData: PricingItem[] = [
   {
     id: 1,
-    category: "Hair Services",
+    category: "Basic Package",
     services: [
-      { id: 1, name: "Hair Cut & Blow Dry", price: "$45", duration: "1 hr" },
-      { id: 2, name: "Hair Color", price: "$80", duration: "2 hrs" },
-      { id: 3, name: "Hair Highlights", price: "$120", duration: "3 hrs" },
-      { id: 4, name: "Hair Treatment", price: "$60", duration: "1.5 hrs" },
+      { id: 13, name: "Basic Haircut & Shampoo", price: "₹450", duration: "45 mins" },
+      { id: 14, name: "Simple Manicure", price: "₹300", duration: "30 mins" },
+      { id: 15, name: "Quick Facial Cleanse", price: "₹350", duration: "30 mins" },
+      { id: 16, name: "Eyebrow & Upper Lip Threading", price: "₹150", duration: "20 mins" },
     ]
   },
   {
     id: 2,
-    category: "Facial Services",
+    category: "Regular Package",
     services: [
-      { id: 5, name: "Classic Facial", price: "$55", duration: "1 hr" },
-      { id: 6, name: "Anti-Aging Facial", price: "$85", duration: "1.5 hrs" },
-      { id: 7, name: "Acne Treatment", price: "$70", duration: "1 hr" },
-      { id: 8, name: "Hydrating Facial", price: "$65", duration: "1 hr" },
+      { id: 17, name: "Haircut, Blow Dry & Hair Spa", price: "₹1,200", duration: "2.5 hrs" },
+      { id: 18, name: "Manicure & Pedicure", price: "₹600", duration: "1 hr" },
+      { id: 19, name: "Hydrating Facial", price: "₹750", duration: "1 hr" },
+      { id: 20, name: "Full Hand & Half Leg Waxing", price: "₹850", duration: "1 hr" },
     ]
   },
   {
     id: 3,
-    category: "Body Services",
+    category: "Deluxe Package",
     services: [
-      { id: 9, name: "Full Body Massage", price: "$90", duration: "1.5 hrs" },
-      { id: 10, name: "Body Scrub", price: "$75", duration: "1 hr" },
-      { id: 11, name: "Waxing (Full Body)", price: "$150", duration: "2 hrs" },
-      { id: 12, name: "Manicure & Pedicure", price: "$45", duration: "1 hr" },
+      { id: 21, name: "Full Hair Transformation", price: "₹2,500", duration: "3.5 hrs" },
+      { id: 22, name: "Deluxe Mani-Pedi & Paraffin", price: "₹950", duration: "1.5 hrs" },
+      { id: 24, name: "Full Body Massage", price: "₹1,800", duration: "1.5 hrs" },
+      { id: 25, name: "Full Body Waxing & Body Polish", price: "₹3,000", duration: "2.5 hrs" },
     ]
   },
 ];

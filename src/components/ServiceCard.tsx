@@ -19,7 +19,6 @@ export default function ServiceCard({ service }: Props) {
     >
       <div className="relative w-full h-50 rounded-xl overflow-hidden shadow-lg border border-gray-200">
         <Link href={`/service/${service.slug}`}>
-          {/* Service Image */}
           <img
             src={service.icon}
             alt={service.title}
@@ -27,7 +26,6 @@ export default function ServiceCard({ service }: Props) {
               isHovered ? "grayscale" : ""
             }`}
           />
-          {/* View Button*/}
           <div className="absolute inset-0 flex items-center justify-center">
             <button
               type="button"
@@ -38,7 +36,6 @@ export default function ServiceCard({ service }: Props) {
             </button>
           </div>
         </Link>
-        {/* TITLE OVERLAY */}
         <div className="absolute bottom-0 w-full bg-black/60 text-white text-center py-2 px-3">
           <h3 className="text-sm md:text-base font-semibold">{service.title}</h3>
         </div>

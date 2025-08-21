@@ -5,7 +5,6 @@ export default function Footer() {
   return (
     <footer className="bg-pink-100 text-gray-700">
       <div className="max-w-7xl mx-auto px-6 py-12 md:py-16 flex flex-col md:flex-row gap-10">
-        {/* Brand and Description */}
         <div className="space-y-4 flex-4">
           <h2 className="text-2xl font-bold text-pink-600 font-serif">LadiesParlour</h2>
           <p className="text-sm sm:text-base leading-relaxed">
@@ -27,7 +26,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Navigation Links */}
         <nav className="space-y-3 flex-1">
           <h3 className="text-lg font-semibold text-pink-600 font-serif mb-4">Explore</h3>
           <ul className="space-y-2 text-sm sm:text-base">
@@ -54,7 +52,6 @@ export default function Footer() {
           </ul>
         </nav>
 
-        {/* Support Links */}
         <nav className="space-y-3 flex-1">
           <h3 className="text-lg font-semibold text-pink-600 font-serif mb-4">Support</h3>
           <ul className="space-y-2 text-sm sm:text-base">
@@ -76,7 +73,6 @@ export default function Footer() {
           </ul>
         </nav>
 
-        {/* Contact Info */}
         <div className="space-y-3 text-sm sm:text-base flex-1">
           <h3 className="text-lg font-semibold font-serif text-pink-600 mb-4">Contact Us</h3>
           <p>

@@ -20,7 +20,6 @@ export default function ServiceDetail({ service }: { service: Service }) {
           key={section.title}
           className="w-full max-w-7xl mx-auto px-4 md:px-8 py-8 flex flex-col md:flex-row items-center md:items-start gap-8"
         >
-          {/* Image */}
           <div
             className={`md:w-1/2 flex justify-center items-center mb-6 md:mb-0 
             ${
@@ -37,7 +36,6 @@ export default function ServiceDetail({ service }: { service: Service }) {
             />
           </div>
 
-          {/* Text */}
           <div
             className={`md:w-1/2 flex flex-col justify-center
             ${

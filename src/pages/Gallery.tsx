@@ -8,7 +8,7 @@ export default function Gallery() {
 
   return (
     <div className="relative bg-[#faf6f3] min-h-screen py-12 px-4 sm:px-6 lg:px-8">
-      <h2 className="text-4xl font-serif sm:text-6xl font-bold text-pink-600 text-center mb-10">
+      <h2 className="text-4xl font-serif sm:text-5xl font-bold text-pink-600 text-center mb-10">
         Gallery
       </h2>
 

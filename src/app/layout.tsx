@@ -6,7 +6,6 @@ import Footer from "../global/Footer";
 import BookAppointmentButton from "@/components/BookAppointmentButton ";
 import Preloader from "@/components/Preloader";
 import useLoadingTracker from "@/components/LoadingTracker";
-// import LandingOverlay from "@/components/LandingOverlay";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const loading = useLoadingTracker();
@@ -14,7 +13,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-        {/* <LandingOverlay /> */}
         <Header />
         <main>
           <Preloader loading={loading}>

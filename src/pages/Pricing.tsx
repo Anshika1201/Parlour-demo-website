@@ -1,10 +1,10 @@
 import React from "react";
 import { pricingData, PricingItem } from "@/data/pricing";
+import Link from "next/link";
 
 export default function Pricing() {
     return (
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
-            {/* Heading */}
             <div className="text-center mb-12">
                 <h2 className="text-4xl font-serif sm:text-4xl lg:text-5xl font-bold text-pink-600 mb-4">
                     Our Pricing
@@ -14,7 +14,6 @@ export default function Pricing() {
                 </p>
             </div>
 
-            {/* Pricing Grids */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {pricingData.map(({ id, category, services }: PricingItem) => (
                     <div
@@ -55,13 +54,14 @@ export default function Pricing() {
 
                             <div>
                                 <div className="mt-4 text-center">
+                                    <Link href={`/appointment?category=${encodeURIComponent(category)}`} passHref>
                                     <button className="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-300 text-sm ">
                                         Book Now
                                     </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
                 ))}
             </div>

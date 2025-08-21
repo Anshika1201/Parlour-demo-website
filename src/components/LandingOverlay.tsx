@@ -30,7 +30,6 @@ export default function LandingOverlay({ open, onClose }: LandingOverlayProps) {
       }`}
       style={{ willChange: "transform" }}
     >
-      {/* Close button */}
       <button
         onClick={onClose}
         className="absolute top-6 right-6 text-pink-600 text-3xl focus:outline-none"
@@ -39,14 +38,12 @@ export default function LandingOverlay({ open, onClose }: LandingOverlayProps) {
         &times;
       </button>
 
-      {/* Logo top left */}
       <div className="flex justify-start items-center mb-10">
         <h1 className="text-4xl font-extrabold text-pink-600 font-mono select-none">
           Ladies Parlour
         </h1>
       </div>
 
-      {/* Landing page description */}
       <div className="flex-grow flex flex-col justify-center max-w-3xl mx-auto space-y-8 text-center md:text-left">
         <h2 className="text-3xl md:text-5xl font-bold text-pink-700 drop-shadow-md">
           Welcome to Ladies Parlour

@@ -1,6 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { slides } from "@/data/slider";
+import Link from 'next/link';
+
 
 const Slider: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -15,8 +17,7 @@ const Slider: React.FC = () => {
   }, [currentIndex]);
 
   return (
-    <div className="relative w-full h-[400px] sm:h-[500px] md:h-[650px]  overflow-hidden">
-      {/* Slides */}
+    <div className="relative w-full h-[400px] sm:h-[500px] md:h-[650px] overflow-hidden">
       {slides.map((slide, idx) => (
         <div
           key={slide.id}
@@ -32,7 +33,6 @@ const Slider: React.FC = () => {
         >
           <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent" />
 
-          {/* Text Content */}
           <div className="relative h-full flex items-center justify-start px-6 sm:px-10 md:px-16 lg:px-24">
             <div className="max-w-lg text-white">
               <h2 className="text-lg font-serif sm:text-2xl md:text-4xl font-bold mb-3">
@@ -41,9 +41,11 @@ const Slider: React.FC = () => {
               <p className="text-sm sm:text-base md:text-lg mb-5">
                 {slide.description}
               </p>
+              <Link href="/appointment" passHref>
               <button className="px-4 sm:px-5 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition text-sm sm:text-base">
                 {slide.buttonText}
               </button>
+              </Link>
             </div>
           </div>
         </div>
