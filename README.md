@@ -119,7 +119,7 @@ The backend server will start on port 5000 by default.
 
 ## Support
 
-If you have questions or issues, please create an issue in the repository or contact me at your.email@example.com.
+If you have questions or issues, please create an issue in the repository or contact me at samanshika752@gmail.com.
 
 ---
 
