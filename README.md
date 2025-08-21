@@ -15,8 +15,13 @@ LadiesParlour is a modern, fully responsive web application tailored for a beaut
 
 ## Screenshot
 
-![Demo Screenshot](./screenshot-demo.jpg)  
-*Screenshot provided is a demo of responsive pages and booking flow.*
+
+*Screenshot p<img width="1894" height="909" alt="Screenshot 2025-08-21 211047" src="https://github.com/user-attachments/assets/4f8dafff-8418-47a8-830e-402701cb042b" />
+<img width="1891" height="910" alt="Screenshot 2025-08-21 211134" src="https://github.com/user-attachments/assets/4c8bcd21-e60a-4e73-ba8c-30407bbdc071" />
+![Uploading Screenshot 2025-08-21 211153.png…]()
+
+rovided is a demo of responsive pages and booking flow.*
+
 
 ---
 
