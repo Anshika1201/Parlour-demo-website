@@ -108,6 +108,11 @@ The backend server will start on port 5000 by default.
 
 ---
 
+##  Upcoming Updates
+ - **Email Integration :** We are working on a new feature to send a confirmation email to both the client and the beautician after a successful booking. This will provide all parties with a seamless and reliable way to receive immediate details about the appointment.
+
+
+
 ## Additional Information
 
 - **License:** MIT License — Feel free to use, modify, and distribute with proper credit.
