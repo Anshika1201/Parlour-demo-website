@@ -15,11 +15,11 @@ LadiesParlour is a modern, fully responsive web application tailored for a beaut
 
 ## Screenshot
 
-
-<img width="1894" height="909" alt="Screenshot 2025-08-21 211047" src="https://github.com/user-attachments/assets/4f8dafff-8418-47a8-830e-402701cb042b" />
 <img width="1891" height="910" alt="Screenshot 2025-08-21 211134" src="https://github.com/user-attachments/assets/4c8bcd21-e60a-4e73-ba8c-30407bbdc071" />
+<img width="1894" height="909" alt="Screenshot 2025-08-21 211047" src="https://github.com/user-attachments/assets/4f8dafff-8418-47a8-830e-402701cb042b" />
+<img width="1894" height="909" alt="Screenshot 2025-08-22 144725" src="https://github.com/user-attachments/assets/288b25dc-8f0a-4080-93bc-cb3f30ab93b8" />
 
-*Screenshot provided is a demo of responsive pages and booking flow.*
+*Screenshot provided is a demo of website.*
 
 
 ---
@@ -38,14 +38,13 @@ Follow the instructions below to clone, setup, and run the project both frontend
 
 ### Clone the Repository
 
-    git clone https://github.com/yourusername/ladiesparlour.git
-    cd ladiesparlour
+    git clone https://github.com/Anshika1201/Parlour-demo-website.git
 
 ---
 
 ### Setup Frontend
 
-      cd frontend
+      cd parlour-demo-website
       npm install # or yarn install
 
 
@@ -66,7 +65,7 @@ Open a new terminal window/tab:
       npm install # or yarn install
 
 
-Ensure MongoDB is running locally (`mongodb://localhost:27017/ladiesparlour`) or update your connection string in `server.js`.
+Ensure MongoDB is running locally (`mongodb://localhost:27017/your_db_name`) or update your connection string in `server.js`.
 
 ### Run Backend Server
 
@@ -119,7 +118,7 @@ The backend server will start on port 5000 by default.
 
 ## Support
 
-If you have questions or issues, please create an issue in the repository or contact me at samanshika752@gmail.com.
+If you have questions or issues, please create an issue in the repository or contact me at [LinkedIn](www.linkedin.com/in/anshika-samriya-344946274).
 
 ---
 
@@ -127,7 +126,7 @@ If you have questions or issues, please create an issue in the repository or con
 
 | Task                    | Command                                      |
 |-------------------------|----------------------------------------------|
-| Clone repo              | `git clone https://github.com/yourusername/ladiesparlour.git` |
+| Clone repo              | `git clone https://github.com/Anshika1201/Parlour-demo-website.git` |
 | Install frontend deps   | `cd frontend && npm install`                  |
 | Run frontend dev server | `npm run dev`                                 |
 | Install backend deps    | `cd backend && npm install`                    |
